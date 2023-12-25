@@ -21,4 +21,11 @@ bool()
 # Division /
 # Addition +
 # Subtraction -
+
+8 // 3 # get an int
+```
+- round()
+- f-strings: format strings
+```py
+print(f'Your age is {age}.')
 ```
