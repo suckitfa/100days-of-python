@@ -29,3 +29,15 @@ bool()
 ```py
 print(f'Your age is {age}.')
 ```
+### day 3
+- if else
+- nested if-else statement
+- if elif else
+- mulitiple if
+```py
+if condition:
+    do1
+
+if condition2:
+    do2
+```
