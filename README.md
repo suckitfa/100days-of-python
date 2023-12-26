@@ -42,3 +42,5 @@ if condition2:
     do2
 ```
 - logic operator: and or not
+
+### day 4 random and list
