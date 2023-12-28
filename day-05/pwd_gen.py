@@ -12,17 +12,27 @@ nr_numbers = int(input(f"How many numbers would you like?\n"))
 #Eazy Level - Order not randomised:
 #e.g. 4 letter, 2 symbol, 2 number = JduE&!91
 pwd = ''
+pwd_list = []
 for i in range(0,nr_letters):
-    pwd += random.choice(letters)
+    # pwd += random.choice(letters)
+    pwd_list.append(random.choice(letters))
 
 for i in range(0,nr_numbers):
-    pwd += random.choice(numbers)
+    # pwd += random.choice(numbers)
+    pwd_list.append(random.choice(numbers))
 
 for i in range(0,nr_symbols):
-    pwd += random.choice(symbols)
-print(pwd)
+    # pwd += random.choice(symbols)
+    pwd_list.append(random.choice(symbols))
+# print(pwd)
 
 #Hard Level - Order of characters randomised:
 #e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
-new_pwd = random.shuffle(pwd)
-print(f'new pwd = {new_pwd}')
+random.shuffle(pwd_list)
+# print(f'new pwd = {new_pwd}')
+# print(pwd_list)
+# pwd =
+pwd = ''
+for char in pwd_list:
+    pwd += char
+print(f"Your pwd is: {pwd}")
