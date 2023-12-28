@@ -44,3 +44,12 @@ if condition2:
 - logic operator: and or not
 
 ### day 4 random and list
+- random, random.ranint(start,end)
+- list
+- complete the paper rock scissors game
+- learn about module system in Python
+
+### day 5 
+- for-loops: loop through a list
+- new funs: len, sum, range
+- PyPassword Generator
