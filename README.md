@@ -53,3 +53,17 @@ if condition2:
 - for-loops: loop through a list
 - new funs: len, sum, range
 - PyPassword Generator
+
+### day 06
+- code blocks & indent(py prefer space,u can set your editor to support that)
+- func: built in funcs and self-def funcs
+- while-loop
+
+### day 07
+- for & while loop
+- if-elif-else
+- lists
+- strings
+- range
+- module
+- complete the hang man game
