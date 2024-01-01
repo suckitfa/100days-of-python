@@ -67,3 +67,9 @@ if condition2:
 - range
 - module
 - complete the hang man game
+
+### day 08 more about funcs
+- funcs with inputs: paramter => argumnet
+- positional paramters
+- 
+- Caesar Cipher
