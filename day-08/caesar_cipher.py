@@ -23,11 +23,20 @@ def decrypt(text,shift):
         decrypt_text += alphabet[lt_index]
     print(f"The decoded text is {decrypt_text}")
 
-# decrypt(text=text,shift=shift)
-    
-if direction == 'encode':
-    encrypt(text=text,shift=shift)
-elif direction == 'decode':
-    decrypt(text=text,shift=shift)
-else:
-    print("You type the woring deriction！")
+def caesar(start_text, shift_amount, cipher_direction): 
+    if cipher_direction == 'decode':
+        shift = shift_amount * -1
+    elif cipher_direction == 'encode':
+        shift = shift_amount
+    else:
+        print("woring direction!")
+        return
+    encrypt_text = ''
+    len_alphabet = len(alphabet)
+    for letter in start_text:
+        # handle index outof range
+        lt_index = (alphabet.index(letter) + shift) % (len_alphabet - 1)
+        encrypt_text += alphabet[lt_index]
+    print(f"The {cipher_direction} text is {encrypt_text}")
+
+caesar(start_text=text, shift_amount=shift, cipher_direction=direction)
