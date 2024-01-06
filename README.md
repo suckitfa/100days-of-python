@@ -71,5 +71,10 @@ if condition2:
 ### day 08 more about funcs
 - funcs with inputs: paramter => argumnet
 - positional paramters
-- 
 - Caesar Cipher
+
+### day 09 DS: dicts,
+- dict manipulate a dict, add
+- loop the key of the dict
+- list in dict
+- auction program
