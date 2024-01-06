@@ -78,3 +78,9 @@ if condition2:
 - loop the key of the dict
 - list in dict
 - auction program
+
+### day 10 funcs with outputs
+- single return
+- multiple returns
+- doc string in a func
+- while-loops vs recursion

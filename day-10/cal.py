@@ -1,7 +1,5 @@
 import art
 import os
-print(art.logo)
-os.system("cls")
 
 # what is the first number?
 # + - * /
@@ -32,6 +30,8 @@ operations = {
 
 
 def cal():
+    os.system("cls")
+    print(art.logo)
     should_continue = True
     num1 = float(input("What's the first number?:"))
     for symbol in operations:
