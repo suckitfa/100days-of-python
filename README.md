@@ -84,3 +84,6 @@ if condition2:
 - multiple returns
 - doc string in a func
 - while-loops vs recursion
+
+### day 11
+- must call the func after it was declared
