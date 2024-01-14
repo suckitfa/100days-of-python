@@ -22,17 +22,18 @@ def my_function():
 #   print("You are a Gen Z.")
 
 # # Fix the Errors
-age = int(input("How old are you?"))
-if age > 18:
-  print(f"You can drive at age {age}.")
+# age = int(input("How old are you?"))
+# if age > 18:
+#   print(f"You can drive at age {age}.")
 
 # #Print is Your Friend
-# pages = 0
-# word_per_page = 0
-# pages = int(input("Number of pages: "))
-# word_per_page == int(input("Number of words per page: "))
-# total_words = pages * word_per_page
-# print(total_words)
+pages = 0
+word_per_page = 0
+pages = int(input("Number of pages: "))
+word_per_page = int(input("Number of words per page: "))
+print(f"pages = {pages},word_per_page = {word_per_page}")
+total_words = pages * word_per_page
+print(total_words)
 
 # #Use a Debugger
 # def mutate(a_list):
