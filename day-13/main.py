@@ -27,20 +27,20 @@ def my_function():
 #   print(f"You can drive at age {age}.")
 
 # #Print is Your Friend
-pages = 0
-word_per_page = 0
-pages = int(input("Number of pages: "))
-word_per_page = int(input("Number of words per page: "))
-print(f"pages = {pages},word_per_page = {word_per_page}")
-total_words = pages * word_per_page
-print(total_words)
+# pages = 0
+# word_per_page = 0
+# pages = int(input("Number of pages: "))
+# word_per_page = int(input("Number of words per page: "))
+# print(f"pages = {pages},word_per_page = {word_per_page}")
+# total_words = pages * word_per_page
+# print(total_words)
 
 # #Use a Debugger
-# def mutate(a_list):
-#   b_list = []
-#   for item in a_list:
-#     new_item = item * 2
-#   b_list.append(new_item)
-#   print(b_list)
+def mutate(a_list):
+  b_list = []
+  for item in a_list:
+    new_item = item * 2
+    b_list.append(new_item)
+  print(b_list)
 
-# mutate([1,2,3,5,8,13])
+mutate([1,2,3,5,8,13])
