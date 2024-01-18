@@ -1,7 +1,7 @@
 '''
 Date: 2024-01-16 20:03:13
 LastEditors: GuangyuanTang 254202042@qq.com
-LastEditTime: 2024-01-16 20:56:10
+LastEditTime: 2024-01-18 09:46:19
 FilePath: \100days-of-python\day-15\main.py
 '''
 MENU = {
@@ -14,7 +14,7 @@ MENU = {
     },
     "latte": {
         "ingredients": {
-            "water": 200,
+            "water": 200,          
             "milk": 150,
             "coffee": 24,
         },
@@ -30,13 +30,13 @@ MENU = {
     }
 }
 
-resources = {
+resources = { 
     "water": 300,
     "milk": 200,
     "coffee": 100,
 }
 
-def check_resource(water,milk,coffee):
+def check_resource(water,coffee, milk = 0):
     if resources['water'] < water:
         print("Sorry, there is not enought water!")
         return False
@@ -63,15 +63,21 @@ def print_report(money):
 def make_coffee(user_input):
     if user_input in MENU:
         coffee = MENU[user_input]
-        ingredients = coffee.ingredients
-        cost = coffee.cost
-        resources_flag = check_resource(water=ingredients.water,milk=ingredients.milk,coffee=ingredients.coffee)
+        ingredients = coffee['ingredients']
+        cost = coffee['cost']
+        print(f"ingredients = {ingredients}")
+        if 'milk' in ingredients:
+            resources_flag = check_resource(water=ingredients['water'],coffee=ingredients['coffee'],milk=ingredients['milk'])
+        else:
+            resources_flag = check_resource(water=ingredients['water'],coffee=ingredients['coffee'])
+        
         if not resources_flag:
             return False
         else:
             user_moneny = process_coins()
             if user_moneny > cost:
                 change_money = user_moneny - cost
+                # reduce the resources
                 print(f'Here is your {user_input}, and some change ${change_money}')
                 return True
             else:

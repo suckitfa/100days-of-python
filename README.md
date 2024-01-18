@@ -87,3 +87,22 @@ if condition2:
 
 ### day 11
 - must call the func after it was declared
+
+### day 12
+- global scope
+- func scope: only avabile inside the func.
+- there is no block scope in python: if /for-loop...
+```python
+enemies = 1
+def increase_enemies():
+    global enemies
+    enemies += 1
+    print(f"enemies inside func: {enemies}")
+```
+- declare constants
+
+### day 13
+- debug
+- reproduce the bug 重现BUG
+- using a debugger in vscode
+- most important: it is okay to get bugs when coding.
