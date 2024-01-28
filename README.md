@@ -106,3 +106,8 @@ def increase_enemies():
 - reproduce the bug 重现BUG
 - using a debugger in vscode
 - most important: it is okay to get bugs when coding.
+
+### day 16 OOP trying modeling real life objects
+- what is has: attributes
+- what it does: methods
+- class: blue print of objects
