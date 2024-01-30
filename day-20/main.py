@@ -1,12 +1,14 @@
 '''
 Date: 2024-01-29 22:03:17
 LastEditors: GuangyuanTang 254202042@qq.com
-LastEditTime: 2024-01-30 09:23:17
+LastEditTime: 2024-01-30 09:52:34
 FilePath: \100days-of-python\day-20\main.py
 '''
 from turtle import Screen
 import time
 from snake import Snake
+from food import Food
+from scoreboard import ScoreBoard
 screen = Screen()
 screen.setup(width=600,height=600)
 screen.bgcolor('black')
@@ -14,6 +16,8 @@ screen.title("My Snake Game")
 screen.tracer(0)
 
 snake = Snake()
+food = Food()
+scoreboard = ScoreBoard()
 
 screen.listen()
 screen.onkey(snake.up,'Up')
@@ -28,4 +32,10 @@ while game_is_on:
 
     snake.move()
 
+    # Detect collision with food
+    if snake.head.distance(food) < 15:
+        food.refresh()
+        scoreboard.add_score()
+    
+    # Detect collision with wall
 screen.exitonclick()
