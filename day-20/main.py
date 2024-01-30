@@ -1,7 +1,7 @@
 '''
 Date: 2024-01-29 22:03:17
 LastEditors: GuangyuanTang 254202042@qq.com
-LastEditTime: 2024-01-30 09:52:34
+LastEditTime: 2024-01-30 10:04:56
 FilePath: \100days-of-python\day-20\main.py
 '''
 from turtle import Screen
@@ -36,6 +36,17 @@ while game_is_on:
     if snake.head.distance(food) < 15:
         food.refresh()
         scoreboard.add_score()
+        snake.extend()
     
     # Detect collision with wall
+    if snake.head.xcor() > 280 or snake.head.xcor() < -280 or snake.head.ycor() > 280 or snake.head.ycor() < -280:
+        game_is_on = False
+        scoreboard.game_over()
+
+    # detect collision with tail
+        for segment in snake.segments[1:]:
+            if snake.head.distance(segment) < 15:
+                game_is_on = False
+                scoreboard.game_over()
+
 screen.exitonclick()
