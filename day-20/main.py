@@ -1,7 +1,7 @@
 '''
 Date: 2024-01-29 22:03:17
 LastEditors: GuangyuanTang 254202042@qq.com
-LastEditTime: 2024-01-30 10:04:56
+LastEditTime: 2024-01-30 10:08:00
 FilePath: \100days-of-python\day-20\main.py
 '''
 from turtle import Screen
@@ -45,7 +45,7 @@ while game_is_on:
 
     # detect collision with tail
         for segment in snake.segments[1:]:
-            if snake.head.distance(segment) < 15:
+            if snake.head.distance(segment) < 10:
                 game_is_on = False
                 scoreboard.game_over()
 
