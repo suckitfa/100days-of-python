@@ -111,3 +111,6 @@ def increase_enemies():
 - what is has: attributes
 - what it does: methods
 - class: blue print of objects
+
+### day 21
+- class inheritance
