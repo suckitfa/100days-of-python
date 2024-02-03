@@ -1,3 +1,9 @@
+'''
+Date: 2024-01-30 09:12:33
+LastEditors: GuangyuanTang 254202042@qq.com
+LastEditTime: 2024-01-31 09:58:02
+FilePath: \100days-of-python\day-20\ScoreBoard.py
+'''
 from turtle import Turtle
 ALIGNMENT = "center"
 FONT = ("Courier", 20, "normal")
