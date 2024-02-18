@@ -138,3 +138,11 @@ nemo.swim()
 nemo.breath()
 print(nemo.num_eyes)
 ```
+### day-24 file
+- read a file
+- write to a file
+```py
+with open('test.txt') as f:
+    # content = f.read()
+    # do some thing with the file
+```
